@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: [
+  './*.html', // Path to your HTML files
+  './*.js' // Path to your JavaScript files where Tailwind classes are used
+  ],
   darkMode: 'class',
   content: [
     "./templates/*.html",
@@ -8,12 +12,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-blue-start': '#eff6ff',
-        'custom-blue-mid': '#dbeafe',
-        'custom-blue-end': '#bfdbfe',
+        'custom-blue-start': '#e0f2fe',
         'custom-dark-start': '#374151',
-        'custom-dark-mid': '#374151',
-        'custom-dark-end': '#030712',
         'dark': {
           'text': '#f0f0f0',
           'h2': '#e5e7eb',

@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "postcss static/css/styles.css -o static/css/styles.css"
+        "build": "postcss static/css/styles.css -o static/css/output.css"
     },
     "dependencies": {
         "@tailwindcss/typography": "^0.5.10"
