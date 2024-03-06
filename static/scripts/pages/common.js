@@ -18,26 +18,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('resize', adjustFooterPosition);
 
+document.addEventListener('DOMContentLoaded', function() {
+    adjustFooterPosition();
+});
+
+window.addEventListener('resize', adjustFooterPosition);
+
 document.addEventListener('DOMContentLoaded', () => {
     const storedTheme = localStorage.getItem('theme');
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const isDarkModePreferred = storedTheme === 'dark' || (!storedTheme && prefersDarkMode);
 
-    document.documentElement.classList.toggle('dark', isDarkModePreferred);
-
     const btnThemeToggler = document.getElementById('themeToggle');
+    const themeIcon = document.createElement('img'); 
+    themeIcon.src = isDarkModePreferred ? '/static/images/sunrise.svg' : '/static/images/sunset.svg';
     if (btnThemeToggler) {
-        btnThemeToggler.textContent = isDarkModePreferred ? 'Light Mode' : 'Dark Mode';
-        
-        btnThemeToggler.addEventListener('click', () => {
-            const isDarkModeNow = document.documentElement.classList.toggle('dark');
-            localStorage.setItem('theme', isDarkModeNow ? 'dark' : 'light');
-            btnThemeToggler.textContent = isDarkModeNow ? 'Light Mode' : 'Dark Mode';
+        btnThemeToggler.appendChild(themeIcon); // Add the img element
 
-            // Custom event indicating the theme has changed
-            window.dispatchEvent(new CustomEvent('themeChanged', { detail: { isDarkMode: isDarkModeNow } }));
+        btnThemeToggler.addEventListener('click', () => {
+            const isDarkModeNow = document.body.classList.toggle('dark');
+            localStorage.setItem('theme', isDarkModeNow ? 'dark' : 'light');
+            themeIcon.src = isDarkModeNow ? '/static/images/sunrise.svg' : '/static/images/sunset.svg';
         });
     }
+
+    document.body.classList.toggle('dark', isDarkModePreferred);
 });
 
 // Scroll up

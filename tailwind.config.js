@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   purge: [
-  './*.html',
-  './*.js' 
-  ],
-  darkMode: 'class',
-  content: [
-    "./templates/*.html",
-    "./static/**/*.js",
-  ],
+    './_layouts/*.html',
+    './static/scripts/*.js' 
+    ],
+    darkMode: 'class',
+    content: [
+      "./templates/*.html",
+      "./static/scripts/*.js",
+    ],
   theme: {
     extend: {
       colors: {
