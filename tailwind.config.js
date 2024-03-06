@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   purge: [
-  './*.html', // Path to your HTML files
-  './*.js' // Path to your JavaScript files where Tailwind classes are used
+  './*.html',
+  './*.js' 
   ],
   darkMode: 'class',
   content: [

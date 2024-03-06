@@ -1,3 +1,9 @@
+#
+Gemfile.lock
+_site
+./bundle
+_vendor/
+
 # Logs
 logs
 *.log
