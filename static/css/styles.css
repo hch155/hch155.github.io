@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.markdown-content h2 {
+    @apply text-2xl text-center font-bold text-gray-800 dark:text-white;
+}
+
+.markdown-content p {
+    @apply text-base text-gray-600 dark:text-white;
+}
+
+.markdown-content a {
+    @apply text-blue-500 hover:text-blue-600 dark:text-white;
+}
+
+.text-theme-responsive {
+   color: black;
+  }
+  
+.dark .text-theme-responsive {
+   color: white; 
+  }
+  
+.table-custom {
+    @apply table-auto border-collapse border border-gray-500 mt-5;
+  }
+  
+  .th-custom {
+    @apply border border-gray-600 p-2;
+  }
+  
+  .td-custom {
+    @apply border border-gray-700 p-2;
+  }
+
+  .dark .border-custom {
+    @apply border-white;
+  }
+  
+  .dark .th-custom {
+    @apply border-white;
+  }
+  
+  .dark .td-custom {
+    @apply border-white;
+  }

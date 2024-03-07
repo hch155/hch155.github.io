@@ -1,3 +1,6 @@
+baseurl: "hch155"
+url: "https://github.com/hch155/hch155.github.io"
+
 plugins:
   - jekyll-relative-links
 relative_links:
