@@ -1,14 +1,8 @@
 {
-    "homepage": "https://hch155.github.io/",
     "scripts": {
-        "build": "postcss static/css/styles.css -o static/css/output.css",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "build": "postcss static/css/styles.css -o static/css/output.css"
     },
     "dependencies": {
         "@tailwindcss/typography": "^0.5.10"
-    },
-    "devDependencies": {
-        "gh-pages": "^6.1.1"
     }
 }
