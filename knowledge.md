@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Knowledge
-permalink: /content/knowledge
+permalink: /knowledge
 ---
 ## to be added knowledge
 
