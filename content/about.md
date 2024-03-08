@@ -1,5 +1,6 @@
 ---
 layout: default
+title: About
 ---
 
 ## to be added about

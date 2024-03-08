@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Projects
 ---
 
 ## to be added projects
