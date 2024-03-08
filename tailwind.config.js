@@ -3,19 +3,19 @@ module.exports = {
   darkMode: 'class',
   content: [
     "./**/*.html",
-    "./static/**/*.js",
+    "./**/*.js",
   ],
   theme: {
     extend: {
       colors: {
-        'custom-blue-start': '#e0f2fe',
-        'custom-dark-start': '#374151',
+        'custom-blue-start': '#93c5fd',
+        'custom-dark-start': '#111827',
         'dark': {
           'text': '#f0f0f0',
           'h2': '#e5e7eb',
           'p': '#e5e7eb',
           'a': '#e5e7eb',
-          'a-hover': '#1e40af', 
+          'a-hover': '#1e40af',  
     },
     typography: (theme) => ({
       DEFAULT: {

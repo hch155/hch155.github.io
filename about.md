@@ -4,6 +4,6 @@ title: About
 permalink: /about
 ---
 
-## to be added about
+<text>to be added about</text>
 
 <p>123</p>
