@@ -1,4 +1,5 @@
-// base.html
+var baseurl = '/hch155';
+
 
 function adjustFooterPosition() {
     const footer = document.querySelector('footer'); 
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('resize', adjustFooterPosition);
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const storedTheme = localStorage.getItem('theme');
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -31,14 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnThemeToggler = document.getElementById('themeToggle');
     const themeIcon = document.createElement('img'); 
-    themeIcon.src = isDarkModePreferred ? '/static/images/sunrise.svg' : '/static/images/sunset.svg';
+    themeIcon.src = isDarkModePreferred ? baseurl + '/static/images/sunrise.svg' : baseurl + '/static/images/sunset.svg';
     if (btnThemeToggler) {
         btnThemeToggler.appendChild(themeIcon); // Add the img element
 
         btnThemeToggler.addEventListener('click', () => {
             const isDarkModeNow = document.body.classList.toggle('dark');
             localStorage.setItem('theme', isDarkModeNow ? 'dark' : 'light');
-            themeIcon.src = isDarkModeNow ? '/static/images/sunrise.svg' : '/static/images/sunset.svg';
+            themeIcon.src = isDarkModeNow ? baseurl + '/static/images/sunrise.svg' : baseurl + '/static/images/sunset.svg';
         });
     }
 
