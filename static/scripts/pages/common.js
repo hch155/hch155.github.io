@@ -16,12 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('resize', adjustFooterPosition);
 
-document.addEventListener('DOMContentLoaded', function() {
-    adjustFooterPosition();
-});
-
-window.addEventListener('resize', adjustFooterPosition);
-
 document.addEventListener('DOMContentLoaded', () => {
     const btnThemeToggler = document.getElementById('themeToggle');
     const themeIcon = document.createElement('img');

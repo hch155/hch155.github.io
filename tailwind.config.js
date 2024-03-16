@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-blue-start': '#93c5fd',
+        'custom-blue-start': '#e0e7ff',
         'custom-dark-start': '#111827',
         'dark': {
           'text': '#f0f0f0',
